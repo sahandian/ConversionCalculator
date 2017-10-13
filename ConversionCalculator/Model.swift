@@ -112,9 +112,10 @@ class ConversionCalculator{
                 return input * 0.3048
             }
             if(lengthTo == .kilometer){
-                return input *
+                return input
             }
         }
+        return input
         
     }
 }
