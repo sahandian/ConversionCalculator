@@ -46,6 +46,26 @@ enum LengthConvertTo: String{
     case centimeter
 }
 
+enum TempConvertTo: String {
+    case fheit
+    case celsius
+}
+
+enum TempConvertFrom: String {
+    case fheit
+    case celsius
+}
+
+enum WeightConvertFrom: String {
+    case kilograms
+    case pounds
+}
+
+enum WeightConvertTo: String {
+    case kilograms
+    case pounds
+}
+
 class ConversionCalculator{
     var inputValueString = ""
     var convertedAmount: Double = 0.0
@@ -236,4 +256,45 @@ class ConversionCalculator{
         return input
         
     }
+    
+    func calculateWeight(weightFrom: WeightConvertFrom, weightTo: WeightConvertTo) -> Double {
+        if (weightFrom == .pounds) {
+            if(weightTo == .kilograms) {
+                return input * 0.453592
+            }
+            
+            if (weightTo == .pounds){
+                return input
+            }
+        } else if (weightFrom == .kilograms){
+            if(weightTo == .pounds){
+                return input / 0.453592
+            }
+            if(weightTo == .kilograms){
+                return input
+            }
+        }
+        return input
+    }
+    
+    func calculateTemp(tempFrom: TempConvertFrom, tempTo: TempConvertTo) -> Double {
+        if (tempFrom == .fheit) {
+            if(tempTo == .celsius) {
+                return ((input*1.8)+32)
+            }
+            
+            if (tempTo == .fheit){
+                return input
+            }
+        } else if (tempFrom == .celsius){
+            if(tempTo == .fheit){
+                return (input-32)/(1.8)
+            }
+            if(tempTo == .celsius){
+                return input
+            }
+        }
+        return input
+    }
+
 }
