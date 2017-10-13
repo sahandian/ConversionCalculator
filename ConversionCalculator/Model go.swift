@@ -106,16 +106,134 @@ class ConversionCalculator{
                 return input * 3
             }
             if(lengthTo == .mile){
-                return input * 5280
+                return input * .000189394
             }
             if(lengthTo == .meter){
                 return input * 0.3048
             }
             if(lengthTo == .kilometer){
-                return input
+                return input * 0.0003048
             }
+            if(lengthTo == .centimeter){
+                return input * 30.48
+            }
+            if(lengthTo == .inch){
+                return input * 12
+            }
+            
         }
-        return input*2 +12 - 6
+        
+        if(lengthFrom == .yard){
+            if(lengthTo == .feet){
+                return input * 3
+            }
+            if(lengthTo == .mile){
+                return (input * 0.000189394)*3
+            }
+            if(lengthTo == .meter){
+                return (input * 0.3048)*3
+            }
+            if(lengthTo == .kilometer){
+                return (input * 0.0003048)*3
+            }
+            if(lengthTo == .centimeter){
+                return (input *30.48)*3
+            }
+            if(lengthTo == .inch){
+                return (input * 12)*3
+            }
+            
+        }
+        
+        if(lengthFrom == .inch){
+            if(lengthTo == .yard){
+                return input * 0.0277778
+            }
+            if(lengthTo == .mile){
+                return (input * .000189394) / 12
+            }
+            if(lengthTo == .meter){
+                return (input * 0.3048) / 12
+            }
+            if(lengthTo == .kilometer){
+                return (input * 0.0003048) / 12
+            }
+            if(lengthTo == .centimeter){
+                return (input *30.48) / 12
+            }
+            if(lengthTo == .feet){
+                return (input / 12)
+            }
+            
+        }
+        if(lengthFrom == .centimeter){
+            if(lengthTo == .yard){
+                return input * 0.0109361
+            }
+            if(lengthTo == .mile){
+                return (input * .00000621371)
+            }
+            if(lengthTo == .meter){
+                return (input * 0.01
+            }
+            if(lengthTo == .kilometer){
+                return (input * 0.00001)
+            }
+            if(lengthTo == .inch){
+                return (input * .393701
+            }
+            if(lengthTo == .feet){
+                return 0.0328084
+            }
+            
+        }
+        
+        if(lengthFrom == .meter){
+            if(lengthTo == .yard){
+                return input * 1.09361
+            }
+            if(lengthTo == .mile){
+                return (input * 0.000621371)
+            }
+            if(lengthTo == .centimeter){
+                return (input * 100
+            }
+            if(lengthTo == .kilometer){
+                return (input * 0.001)
+            }
+            if(lengthTo == .inch){
+                return (input * 39.3701
+            }
+            if(lengthTo == .feet){
+                return 3.28084
+            }
+            
+        }
+        if(lengthFrom == .kilometer){
+            if(lengthTo == .yard){
+                return input * 1093.61
+            }
+            if(lengthTo == .mile){
+                return (input * 6.21371)
+            }
+            if(lengthTo == .centimeter){
+                return (input * 100000
+            }
+            if(lengthTo == .meter){
+                return (input * 1000)
+            }
+            if(lengthTo == .inch){
+                return (input * 39370.1
+            }
+            if(lengthTo == .feet){
+                return 3280.84
+            }
+            
+        }
+        
+        
+        
+        return input
         
     }
 }
