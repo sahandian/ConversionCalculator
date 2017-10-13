@@ -115,7 +115,7 @@ class ConversionCalculator{
                 return input
             }
         }
-        return input*2
+        return input*2 +12
         
     }
 }
