@@ -90,7 +90,7 @@ class ConversionCalculator{
         }
         return input
     }
-    
+   /*
     func calculateLength( lengthFrom: LengthConvertFrom, lengthTo: LengthConvertTo) -> Double{
         if(lengthFrom == .feet){
             if(lengthTo == .yard){
@@ -107,7 +107,7 @@ class ConversionCalculator{
             }
         }
         
-    }
+    }*/
 }
 
 
