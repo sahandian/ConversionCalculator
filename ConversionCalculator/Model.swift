@@ -7,6 +7,15 @@
 //
 
 import Foundation
+//
+//  Model.swift
+//  ConversionCalculator
+//
+//  Created by sahand sadri on 10/12/17.
+//  Copyright © 2017 Sahand Sadri. All rights reserved.
+//
+
+import Foundation
 
 enum SpeedConvertFrom: String{
     case mph
@@ -90,7 +99,7 @@ class ConversionCalculator{
         }
         return input
     }
-   /*
+    
     func calculateLength( lengthFrom: LengthConvertFrom, lengthTo: LengthConvertTo) -> Double{
         if(lengthFrom == .feet){
             if(lengthTo == .yard){
@@ -107,9 +116,5 @@ class ConversionCalculator{
             }
         }
         
-    }*/
+    }
 }
-
-
-
-
