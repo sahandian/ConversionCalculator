@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D97C2011F9040140034DD18 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97C2001F9040140034DD18 /* Model.swift */; };
+		5D97C2011F9040140034DD18 /* Model go.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97C2001F9040140034DD18 /* Model go.swift */; };
 		5DD0A7231F84536700B38CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0A7221F84536700B38CD2 /* AppDelegate.swift */; };
 		5DD0A7251F84536700B38CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0A7241F84536700B38CD2 /* ViewController.swift */; };
 		5DD0A7281F84536700B38CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD0A7261F84536700B38CD2 /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D97C2001F9040140034DD18 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5D97C2001F9040140034DD18 /* Model go.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model go.swift"; sourceTree = "<group>"; };
 		5DD0A71F1F84536700B38CD2 /* ConversionCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConversionCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD0A7221F84536700B38CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD0A7241F84536700B38CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				5DD0A7221F84536700B38CD2 /* AppDelegate.swift */,
 				5DD0A7241F84536700B38CD2 /* ViewController.swift */,
 				5DD0A7261F84536700B38CD2 /* Main.storyboard */,
-				5D97C2001F9040140034DD18 /* Model.swift */,
+				5D97C2001F9040140034DD18 /* Model go.swift */,
 				5DD0A7291F84536700B38CD2 /* Assets.xcassets */,
 				5DD0A72B1F84536700B38CD2 /* LaunchScreen.storyboard */,
 				5DD0A72E1F84536700B38CD2 /* Info.plist */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D97C2011F9040140034DD18 /* Model.swift in Sources */,
+				5D97C2011F9040140034DD18 /* Model go.swift in Sources */,
 				5DD0A7251F84536700B38CD2 /* ViewController.swift in Sources */,
 				5DD0A7231F84536700B38CD2 /* AppDelegate.swift in Sources */,
 			);
